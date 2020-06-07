@@ -76,6 +76,49 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
+.header.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#dibbi {
+  width: 100%;
+  height: 100%;
+}
+header.masthead .masthead-content {
+  height: 100%;
+  z-index: 1;
+      background: rgba(12, 13, 14, 0.8);
+}
+
+header.masthead .masthead-content .masthead-heading {
+  font-size: 4rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+  font-size: 2rem;
+}
+
+
+
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(10rem + 55px);
+    padding-bottom: 10rem;
+  }
+  header.masthead .masthead-content .masthead-heading {
+    font-size: 6rem;
+  }
+  header.masthead .masthead-content .masthead-subheading {
+    font-size: 4rem;
+  }
+}
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -364,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   background-color: rgba(34, 39, 43, 0.8);
   overflow: hidden;
   position: relative;
@@ -402,12 +445,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   height: 120px;
 }
 
 .clients .client-logo img {
-  height: 40px;
+  height: 80px;
 }
 
 .clients .client-logo:hover img {
@@ -438,7 +480,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
   color: #fff;
-  margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
 }
@@ -446,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero p {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 15px auto;
   color: #fff;
 }
 
@@ -1626,13 +1667,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer .copyright {
-  text-align: center;
+  text-align: left;
   padding-top: 30px;
 }
 
 #footer .credits {
   padding-top: 5px;
-  text-align: center;
+  text-align: left;
   font-size: 13px;
   color: #fff;
 }
