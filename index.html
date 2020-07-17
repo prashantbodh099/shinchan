@@ -37,7 +37,8 @@
 
     <script src="./Logy.AI _ AI powered Healthcare_files/core.js"></script><style type="text/css">.Typewriter__cursor{-webkit-animation:Typewriter-cursor 1s infinite;animation:Typewriter-cursor 1s infinite;margin-left:1px}@-webkit-keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}@keyframes Typewriter-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}</style>
     <script src="./Logy.AI _ AI powered Healthcare_files/particles.min.js"></script>
-    <style>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <style>
       #particles-js canvas {
         position: absolute;
         height: 100vh;
@@ -47,6 +48,16 @@
       .is-transparent {
         background-color: transparent;
         background-image: none;
+      }
+      .icon-small i {
+        float: left;
+        margin-right: 10px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .icon-small h4 {
+        text-align: center;
+        vertical-align: middle;
       }
     </style>
 </head>
@@ -112,7 +123,7 @@
 
               <p class="animated fadeInUp">We help you build AI specific to your needs</p>
               <a href="https://portal.logy.ai/" class="btn-get-started animated fadeInUp scrollto">Demo</a>
-              <a href="mailto:humans@logy.ai" class="btn-get-started animated fadeInUp scrollto">Contact Sales</a>
+              <a data-toggle="modal" data-target="#myModal" class="btn-get-started animated fadeInUp scrollto">Contact Sales</a>
             </div>
         </div>
 
@@ -171,11 +182,6 @@
           </div>
           <div class="col-lg-2 col-md-4 col-6">
             <div class="client-logo">
-              
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="client-logo">
             </div>
           </div>
           
@@ -189,6 +195,11 @@
               <img src="assets/img/clients/36_inc.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
             </div>
           </div>
+          <div class="col-lg-2 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="assets/img/clients/TP-k-disc_web.png" class="img-fluid" alt="" data-aos="flip-right" data-aos-delay="500">
+            </div>
+          </div>
             </div>
           </div>
         </div>
@@ -199,9 +210,41 @@
     
     <br>
     <!-- End Contact Section -->
+        <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Contact Sales</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="icon-small">
+                  <i class="fa fa-whatsapp" style="font-size:35px;color:green"></i>
+                  <h4>+91 70019 72016</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+              <div class="col-md-8">
+                <div class="icon-small">
+                  <i class="fa fa-envelope " style="font-size:35px;color:orange"></i>
+                  <h4><a href="mailto:humans@logy.ai">humans@logy.ai</a></h4>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          </div>
+        </div>
+      </div>
+    </div>
   </main><!-- End #main -->
-
   <!-- ======= Footer ======= 
 
 
