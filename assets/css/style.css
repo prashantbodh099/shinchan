@@ -1,13 +1,4 @@
-/**
-* Template Name: Hidayah - v2.0.0
-* Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -39,10 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   background-attachment: scroll;
   background-size: cover;
 }
-#dibbi {
-  width: 100%;
-  height: 100%;
-}
+
 header.masthead .masthead-content {
   height: 100%;
   z-index: 1;
@@ -134,7 +122,11 @@ header.masthead .masthead-content .masthead-subheading {
   #header {
     border: 0;
   }
+  .btn{
+    width: 20%;
+  }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -354,22 +346,69 @@ header.masthead .masthead-content .masthead-subheading {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+/*--------------------------------------------------------------
+# Featured
+--------------------------------------------------------------*/
+.featured {
+  position: relative;
+  z-index: 2;
+}
+
+.featured .icon-box {
+  padding: 40px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  background: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.featured .icon-box i, .fa-stack {
+  color: #428bca;
+  font-size: 32px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.featured .icon-box h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.featured .icon-box h3 a {
+  color: #545454;
+  transition: 0.3s;
+}
+
+
+.featured .icon-box:hover {
+  background: #428bca;
+}
+
+.featured .icon-box:hover i, .featured .icon-box:hover h3 a, .featured .icon-box:hover p, .featured .icon-box:hover .fa-stack  {
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   background-color: rgba(34, 39, 43, 0.8);
   overflow: hidden;
   position: relative;
+  padding: 0;
+  margin-bottom: -120px;
+  position: relative;
+  z-index: 1;
 }
 
 #hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-position: center center;
   position: absolute;
   top: 0;
   right: 0;
@@ -385,6 +424,40 @@ header.masthead .masthead-content .masthead-subheading {
     align-items: center;
 
 }
+@media (max-height: 768px), (max-width: 1200px) {
+  #hero {
+    margin-bottom: 60px;
+  }
+  #hero .carousel-container {
+    padding-bottom: 0;
+  }
+  #hero .carousel-indicators li {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 90vh;
+  }
+  #hero .carousel-item {
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero p {
+    width: 50%;
+  }
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 5%;
+  }
+}
+.nav-menu ul{
+  align-items: center;
+}
+
+
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
@@ -548,6 +621,31 @@ header.masthead .masthead-content .masthead-subheading {
     height: 120vh;
   }
 }
+.bottom-border-input{
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #5697d0;
+}
+#header .btn-get-started {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 25%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: 0.5s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  color: #5697d0;
+  border: 2px solid #5697d0;
+}
+
+#header .btn-get-started:hover {
+  background: #5697d0;
+  color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Sections General
@@ -607,3 +705,201 @@ header.masthead .masthead-content .masthead-subheading {
     width: 50%;
   }
 }
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features {
+  padding-bottom: 40px;
+}
+
+.features .container{
+  width: 100%;
+}
+
+.features .nav-tabs {
+  border: 0;
+}
+
+.features .nav-link {
+  border: 0;
+  padding: 20px;
+  transition: 0.3s;
+  color: #364146;
+  transition: 0.3s ease-in-out;
+  border-radius: 0;
+}
+.features .nav-link-3 {
+  padding: 20px;
+  color: #364146;
+}
+
+.features .nav-link-1{
+  border-left: 4px solid #fafbfb;
+}
+.features .nav-link-2{
+  border-right: 4px solid #fafbfb;
+}
+
+.features .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  color: #576971;
+}
+
+.features .nav-link p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.features .nav-link:hover {
+  background: #fafbfb;
+}
+
+.features .nav-link:hover h4 {
+  color: #364146;
+}
+
+.features .nav-link .active {
+  border-radius: 0;
+  border: 0;
+  background: #fafbfb;
+}
+.features .nav-link-2.active {
+  border-right: 4px solid #009cea;
+}
+.features .nav-link-1.active {
+  border-left: 4px solid #009cea;
+}
+
+.features .nav-link.active h3 {
+  color: #009cea;
+}
+
+.features .tab-pane .active {
+  -webkit-animation: slide-down 0.5s ease-out;
+  animation: slide-down 0.5s ease-out;
+}
+
+
+.features .tab-content {
+  text-align: right;
+  max-height: 50vh;
+  overflow: hidden;
+}
+
+.box{
+  font-family: 'Sen', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+.box:after{
+  content: '';
+  background-color: rgba(0, 156, 234, 0.6);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  opacity: 0;
+  transform: rotate(360deg) scale(0.5);
+  transform-origin: right bottom;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  transition: all .3s ease;
+}
+.box:hover:after{
+  border-color: #009cea;
+  /* rgba(255,255,255,0.9); */
+  box-shadow: 0 0 30px rgba(0,0,0,0.9);
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+.box img{
+  width: 100%;
+  height: auto;
+  transform: scale(1) translateY(0);
+  transition: all .4s ease-in-out;
+}
+.box:hover img{
+  opacity: 0.9;
+  transform: scale(1) translateY(-12px);
+}
+.box .box-content{
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  z-index: 1;
+  transition: all .3s ease 0.2s;
+}
+.box:hover .box-content{
+  opacity: 1;
+  bottom: 100px;
+  padding: 20px;
+}
+.box .title{
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  margin: 0;
+}
+.box .post{
+  font-size: 16px;
+  font-style: italic;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  z-index: 1;
+}
+.box .icon li{
+  margin: 0 3px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.box:hover .icon li{
+  opacity: 1;
+  transform: translateY(0);
+}
+.box:hover .icon li:nth-child(1){ transition-delay: 0.3s; }
+.box:hover .icon li:nth-child(2){ transition-delay: 0.4s; }
+.box .icon li a{
+  color: #333;
+  background-color: #fff;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px 0 rgba(255,255,255, .6);
+  display: block;
+  transition: all 0.3s ease;
+}
+.box .icon li a:hover{
+  color: #fff;
+  background: #333;
+  box-shadow: 0 0 0 2px #fff;
+}
+@media only screen and (max-width:990px){
+  .box { margin: 0 0 30px; }
+}
+
+hr { background-color: #009cea; height: 1px; border: 0; }
